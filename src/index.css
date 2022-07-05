@@ -1,13 +1,62 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+body{
+    height: 100vh;
+    background-image: linear-gradient(to bottom, #53ff96, #41fead, #39fcc2, #3ffad3, #51f7e0, #4af0ef, #56e9f8, #6be0fc, #80d0fd, #99c0f3, #aeafe1, #bba0c9);;
+}
+
+.App{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+    flex-direction: column;
+    gap: 25px;
+}
+
+input[type="search"]{
+    padding: 10px 20px;
+    font-size: 1.3em;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+}
+
+.card{
+    padding: 50px 100px;
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-shadow: 1px 1px 10px #0005;
+}
+
+.card h1{
+    font-size: 6em;
+    color: #fff;
+}
+
+.city{
+    font-size: 18px;
+}
+
+.data{
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+    margin-top: 20px;
+}
+.glass{
+    background: rgba( 255, 255, 255, 0.25 );
+    box-shadow: 0 8px 32px 0 rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 4px );
+    -webkit-backdrop-filter: blur( 4px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
 }

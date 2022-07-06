@@ -1,6 +1,7 @@
 {
   "name": "weather-app",
   "version": "0.1.0",
+  "homepage": "https://github.com/saddy02/saddy02.github.io.git",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.4",

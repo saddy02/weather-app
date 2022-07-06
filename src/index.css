@@ -18,6 +18,12 @@ body{
     font-family: sans-serif;
     flex-direction: column;
     gap: 25px;
+    background-image: linear-gradient(to bottom, #53ff96, #41fead, #39fcc2, #3ffad3, #51f7e0, #4af0ef, #56e9f8, #6be0fc, #80d0fd, #99c0f3, #aeafe1, #bba0c9);
+}
+
+.card .header{
+    display: flex;
+    align-items: center;
 }
 
 input[type="search"]{
@@ -27,17 +33,21 @@ input[type="search"]{
     border: none;
     border-bottom: 1px solid white;
     outline: none;
+    color: #fff;
 }
 
 .card{
-    padding: 50px 100px;
     display: flex;
     flex-direction: column;
+    padding: 0 80px;
+    justify-content: center;
     color: #fff;
     text-shadow: 1px 1px 10px #0005;
+    width: 500px;
+    height: 300px;
 }
 
-.card h1{
+h1{
     font-size: 6em;
     color: #fff;
 }
@@ -49,7 +59,7 @@ input[type="search"]{
 .data{
     display: flex;
     gap: 5px;
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 20px;
 }
 .glass{
@@ -59,4 +69,32 @@ input[type="search"]{
     -webkit-backdrop-filter: blur( 4px );
     border-radius: 10px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+footer, a{
+    color: #fff;
+    text-shadow: 0 0 5px #0005;
+    font-size: .8em;
+}
+
+.result{
+    width: 500px;
+    height: 100px;
+    overflow-y: auto;
+    text-align: center;
+    padding: 5px 20px;
+}
+.result div {
+    margin: 5px 0;
+    color: #fff;
+    text-shadow: 0 0 5px #0005;
+    font-size: 1.4em;
+    cursor: pointer;
+    border-bottom: 1px solid white;
+    width: 100%;
+}
+
+.empty{
+    width: 500px;
+    height: 100px;
 }
